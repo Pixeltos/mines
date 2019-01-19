@@ -13,7 +13,10 @@ public class App {
         JButton start = new JButton("Start");
         
         //Code starts here
-        
+        home.setSize(800, 800);
+        home.getContentPane().add(start);
+        home.setVisible(true);
+
 
 
 
