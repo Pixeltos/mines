@@ -3,6 +3,9 @@ package app;
 import javax.swing.*;
 import java.awt.event.*;
 
+import board.board;
+
+
 public class App implements ActionListener {
     //init frames and buttons
     JButton start;
@@ -14,6 +17,8 @@ public class App implements ActionListener {
     }
 
     public void menu() {
+        App board = new App();
+        
         //Init Vars
     
         //Create Objects
@@ -31,6 +36,7 @@ public class App implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent event) {
-        start.setText("clik boi doin a clik");
+        home.setVisible(false);
+        board.game();
     }
 }
